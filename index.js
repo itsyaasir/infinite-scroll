@@ -13,7 +13,7 @@ function handleImageLoaded() {
   imageLoaded += 1;
   if (imageLoaded === totalImages) {
     ready = true;
-    infiniteScrollLoader.hidden = true;
+   loader.hidden = true;
     apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=30`;
   }
 }
